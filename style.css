@@ -1,0 +1,135 @@
+:root{
+ --orange:hsl(31, 77%, 52%) ;
+ --dark-cyan : hsl(184, 100%, 22%);
+ --Very-dark-cyan : hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray:hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+button{
+font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn{
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 22px;
+    cursor:pointer;
+  transition: all 0.4s ease-in-out;  
+}
+
+.orange{
+background-color: var(--orange);
+border-radius: 6px 6px 0 0;
+}
+
+.orange .btn{
+    color: var(--orange);
+}
+
+.dark-cyan{
+background-color: var(--dark-cyan);
+}
+
+.dark-cyan .btn{
+    color:var(--dark-cyan);
+}
+
+.very-dark-cyan{
+background-color: var(--Very-dark-cyan);
+border-radius: 0 0 6px 6px;
+}
+
+.very-dark-cyan .btn{
+color: var(--Very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.card {
+    padding: 30px;
+
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.card p {
+    color: var(--Transparent-white);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+@media (min-width:992px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .orange{
+        border-radius:6px 0 0 6px ;
+    }
+
+    .very-dark-cyan{
+        border-radius:0 6px 6px 0;
+    }
+
+    .card{
+padding: 40px;
+
+    }
+
+    .card p{
+        margin-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
